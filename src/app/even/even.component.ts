@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-even',
@@ -11,6 +12,7 @@ export class EvenComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(environment.apiaddress)
   }
 
 }
